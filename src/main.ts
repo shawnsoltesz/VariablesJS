@@ -64,17 +64,33 @@ numbers.sort()
 
 //Smallest
 const smallestNumber = numbers[0]
-console.log(smallestNumber)
+console.log('The smallest number is', smallestNumber)
 
 //Largest
 const largestNumber = numbers[numbers.length - 1]
-console.log(largestNumber)
+console.log('The largest number is', largestNumber)
 
 //Sum
-let arraySum = 0
+let sumArray = 0
 numbers.forEach((el) => {
-  sum += el
+  sumArray += el
 })
-console.log('Sum of numbers using forEach:', sum)
+console.log('The sum of numbers is', sumArray)
 
 //Average
+
+let total = 0
+for (let i = 0; i < numbers.length; i++) {
+  total += numbers[i]
+}
+let avgArray = total / numbers.length
+console.log('The average of numbers is', Math.round(avgArray))
+
+const stats = {
+  smallest: smallestNumber,
+  largest: largestNumber,
+  sum: sumArray,
+  average: Math.round(avgArray),
+}
+
+console.table({ stats })
