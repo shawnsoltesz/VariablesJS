@@ -11,10 +11,12 @@ console.log(message)
 const aboutMe = {
   fullName,
   luckyNumber: 4,
-  favoriteMovies: ['Thelma and Louise', 'Shrek', 'BAPS'],
+  favoriteMovies: ['Thelma and Louise', ' Shrek', ' and BAPS'],
 }
 
-console.log(aboutMe)
+console.log(
+  `Hello, my name is ${aboutMe.fullName}. My lucky number is ${aboutMe.luckyNumber} and three of my favorite movies are ${aboutMe.favoriteMovies}.`
+)
 
 let userName = prompt('What is your name?')
 
@@ -43,6 +45,8 @@ Sum = ${sum}, Difference = ${difference}, Product = ${product}, Quotient = ${quo
 
 console.log(recapMessage)
 
+//*Adventure Mode*
+
 const numbers = [
   36608, 24391, 33394, 28807, 42395, 49243, 26629, 21437, 46622, 16381, 39930,
   30638, 14945, 10436, 40246, 26156, 35586, 31524, 39838, 34104, 15705, 20038,
@@ -55,3 +59,22 @@ const numbers = [
   14940, 46988, 25706, 46726, 47966, 16173, 18436, 13796, 31042, 23398, 35898,
   20836,
 ]
+
+numbers.sort()
+
+//Smallest
+const smallestNumber = numbers[0]
+console.log(smallestNumber)
+
+//Largest
+const largestNumber = numbers[numbers.length - 1]
+console.log(largestNumber)
+
+//Sum
+let arraySum = 0
+numbers.forEach((el) => {
+  sum += el
+})
+console.log('Sum of numbers using forEach:', sum)
+
+//Average
