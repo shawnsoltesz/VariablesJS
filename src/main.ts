@@ -4,9 +4,9 @@ const numberOfCupsOfCoffee = 2
 
 const fullName = 'Shawn James Soltesz'
 
-const message = `${fullName} drinks ${numberOfCupsOfCoffee} cups of coffee per day.`
-
-console.log(message)
+console.log(
+  `${fullName} drinks ${numberOfCupsOfCoffee} cups of coffee per day.`
+)
 
 const aboutMe = {
   fullName,
@@ -20,9 +20,7 @@ console.log(
 
 let userName = prompt('What is your name?')
 
-const userNameMessage = `Hi ${userName}, have a great day!`
-
-console.log(userNameMessage)
+console.log(`Hi ${userName}, have a great day!`)
 
 let firstNumber = prompt('Enter a number.') || '0'
 let secondNumber = prompt('Enter a second number.') || '0'
@@ -40,10 +38,8 @@ let remainder = firstOperand % secondOperand
 // the sum, difference, quotient, product, and remainder variables. (e.g. perhaps one
 // of your outputs is similar to If you add 4 and 5 you get 9 if 4 and 5 were the input)
 
-const recapMessage = `Recap: First number entered: ${firstNumber}. Second number entered: ${secondNumber}. 
-Sum = ${sum}, Difference = ${difference}, Product = ${product}, Quotient = ${quotient}, Remainder = ${remainder}.`
-
-console.log(recapMessage)
+console.log(`Recap: First number entered: ${firstNumber}. Second number entered: ${secondNumber}. 
+Sum = ${sum}, Difference = ${difference}, Product = ${product}, Quotient = ${quotient}, Remainder = ${remainder}.`)
 
 //*Adventure Mode*
 
