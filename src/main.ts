@@ -90,3 +90,25 @@ const stats = {
 }
 
 console.table({ stats })
+
+//sumOfOdd
+
+let sumOfOdd = 0
+for (let arrayValue = 1; arrayValue <= 100; arrayValue++) {
+  if (arrayValue % 2 == 1) sumOfOdd += arrayValue
+}
+console.log('The sum of all odd numbers is', sumOfOdd)
+
+//countOfEven
+
+for (let count = 0; count <= 100; count++) {
+  count % 2 == 0
+  // ? console.count(`${count} is even`)
+  // : console.log(`${count} is odd`)
+}
+
+let countOfEven = 0
+for (let arrayValue = 1; arrayValue <= 100; i++) {
+  if (arrayValue % 2 == 0) countOfEven += arrayValue
+}
+console.log('The count of all even numbers is', countOfEven)
